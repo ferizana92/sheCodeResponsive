@@ -1,14 +1,6 @@
-:root {
-    --primary-color: #050040;
-    --secondary-color: #4b003f;
-    --accent-color: #816ed5;
-    --gradient: linear-gradient(to top, #fff 0%, #71a0f1 100%);
-}
-
 body {
     font-family: sans-serif;
     padding: 0 20px;
-    background: var(--gradient);
 }
 
 h1 {
@@ -17,20 +9,40 @@ h1 {
     margin: 0;
     font-size: 34px;
     line-height: 48px;
-    color: var(--primary-color);
 }
 
+h1 h2,
 h3 {
-    color: var(--secondary-color);
-}
-
-p {
-    background: var(--accent-color);
-    padding: 20px;
+    color: #231d3c;
 }
 
 .logo {
     display: block;
     margin: 30px auto;
     width: 150px;
+}
+
+.challenge-1 {
+    display: flex;
+}
+
+.challenge-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.challenge-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.challenge-4 {
+    display: flex;
+}
+
+.challenge-4 div {
+    border: 1px solid black;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
 }
