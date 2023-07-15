@@ -1,6 +1,13 @@
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #f5f2fe;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 body {
     font-family: sans-serif;
     padding: 0 20px;
+    background: var(--gradient);
 }
 
 h1 {
@@ -9,40 +16,32 @@ h1 {
     margin: 0;
     font-size: 34px;
     line-height: 48px;
+    color: var(--primary-color);
 }
 
-h1 h2,
 h3 {
-    color: #231d3c;
+    color: var(--secondary-color);
 }
 
-.logo {
-    display: block;
-    margin: 30px auto;
-    width: 150px;
-}
-
-.challenge-1 {
-    display: flex;
-}
-
-.challenge-2 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.challenge-3 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.challenge-4 {
-    display: flex;
-}
-
-.challenge-4 div {
-    border: 1px solid black;
+p {
+    background: var(--accent-color);
     padding: 20px;
-    flex: 1;
-    text-align: center;
+}
+.navigation-links a {
+    display: block;
+    margin: 20px;
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.contact-list{
+    display: block;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+
+}
+.about-list {
+    display: flex;
 }
