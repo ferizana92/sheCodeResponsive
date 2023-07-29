@@ -21,3 +21,14 @@ h3 {
     margin: 30px auto;
     width: 150px;
 }
+
+@media (max-width: 576px) {
+    .special-heading {
+        color: blue;
+        text-align: center;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+}
